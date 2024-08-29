@@ -1,0 +1,69 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="-7D=K6lO(1x+@O,+duk]" x="-750" y="-310">
+    <mutation component_type="Form" is_generic="false" instance_name="Acknowledgement" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Acknowledgement</field>
+    <statement name="DO">
+      <block type="controls_if" id="9U3b]SxltHW]KZnNXDkP">
+        <value name="IF0">
+          <block type="logic_boolean" id="v!]E1*3g|-/f#_t*=7DI">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="U73N#cpJn[ow;@#3[S{~">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="Fw=@-q7}.u]d9[g^ms@t">
+                <field name="SCREEN">Main_Screen</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="_n:,W0VNHL*Ew@JUPk=s"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="RhtM.dF4W2nfD+Q5AU7$" x="-1330" y="-250">
+    <mutation component_type="Form" is_generic="false" instance_name="Acknowledgement" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Acknowledgement</field>
+    <statement name="DO">
+      <block type="component_set_get" id="_-X:@p8FA(fNxM3EgI/y">
+        <mutation component_type="Form" set_or_get="set" property_name="ShowTitlebarBackButton" is_generic="false" instance_name="Acknowledgement"></mutation>
+        <field name="COMPONENT_SELECTOR">Acknowledgement</field>
+        <field name="PROP">ShowTitlebarBackButton</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="{No#).tuUt;Uk0kZD)@S">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="`2Z3H0ejI=(DfO]nJ!T3" x="-750" y="-150">
+    <mutation component_type="Form" is_generic="false" instance_name="Acknowledgement" event_name="TitlebarBackButtonClicked"></mutation>
+    <field name="COMPONENT_SELECTOR">Acknowledgement</field>
+    <statement name="DO">
+      <block type="controls_if" id="O+)N|$}xyt@2;ZJ=kRyv">
+        <value name="IF0">
+          <block type="logic_boolean" id="qoG+^2|/!Ep/:Uy(I2p-">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="H%+ao%_A(uGb#qXJv[)$">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="tMakKy2:i4QApW0FlkE.">
+                <field name="SCREEN">Main_Screen</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="/~TRVJoO@C5RIPoPC,QF"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

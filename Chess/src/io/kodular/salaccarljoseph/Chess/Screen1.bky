@@ -1,0 +1,60 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="sf4-3`]Vh*xn1W_}T5v*" x="-270" y="-650">
+    <mutation>
+      <arg name="openNewScreenName"></arg>
+    </mutation>
+    <field name="NAME">switchScreensCorrect</field>
+    <field name="VAR0">openNewScreenName</field>
+    <statement name="STACK">
+      <block type="controls_if" id="!s3#`HwdiVLanmwk]E)Z">
+        <value name="IF0">
+          <block type="logic_boolean" id=";H(,XI(3R7;;`qtHYir@">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="{x,g9]VqBD%]3BH,z8v.">
+            <value name="SCREEN">
+              <block type="lexical_variable_get" id="oYO$.fhj^KF}f^*L{XrX">
+                <field name="VAR">openNewScreenName</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="HB/m}|pDhD,`y|JI*^pU"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="@LS]pDFnRmFIfe+#3?uJ" x="-270" y="-490">
+    <mutation component_type="Clock" is_generic="false" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="procedures_callnoreturn" id="d.!G~=I4}?1Eih#6z?y@" inline="false">
+        <mutation name="switchScreensCorrect">
+          <arg name="openNewScreenName"></arg>
+        </mutation>
+        <field name="PROCNAME">switchScreensCorrect</field>
+        <value name="ARG0">
+          <block type="text" id="r{Z9Pn;F0:FL-M?;Nv$[">
+            <field name="TEXT">Main_Screen</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="0(Zy6XC50+:Cu:Q:_/Tp">
+            <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+            <field name="COMPONENT_SELECTOR">Clock1</field>
+            <field name="PROP">TimerEnabled</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="u0G%,w]1)yjQgH1e4Z!3">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

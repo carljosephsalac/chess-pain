@@ -1,0 +1,2043 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="sf4-3`]Vh*xn1W_}T5v*" disabled="true" x="-1550" y="-2670">
+    <mutation>
+      <arg name="openNewScreenName"></arg>
+      <arg name="startValue"></arg>
+    </mutation>
+    <field name="NAME">switchScreensCorrectWithValue</field>
+    <field name="VAR0">openNewScreenName</field>
+    <field name="VAR1">startValue</field>
+    <statement name="STACK">
+      <block type="controls_if" id="!s3#`HwdiVLanmwk]E)Z">
+        <value name="IF0">
+          <block type="logic_boolean" id=";H(,XI(3R7;;`qtHYir@">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreenWithStartValue" id="4rDPtWCsKE,^mt^PC#}/">
+            <value name="SCREENNAME">
+              <block type="lexical_variable_get" id="Z%f7:g#o20ID(^a1Put4">
+                <field name="VAR">openNewScreenName</field>
+              </block>
+            </value>
+            <value name="STARTVALUE">
+              <block type="lexical_variable_get" id="d-0jRd0*h)`Uy6xd8.z~">
+                <field name="VAR">startValue</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="HB/m}|pDhD,`y|JI*^pU"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="shL$=g,r0([S0ZFVVkI?" disabled="true" x="-1530" y="-2490">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View188" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View188</field>
+    <statement name="DO">
+      <block type="component_set_get" id="(^@lZ@7hlxQ==H@*IZFq">
+        <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HA_Puzzle"></mutation>
+        <field name="COMPONENT_SELECTOR">HA_Puzzle</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="Ah2SCC[6A,:D+yfoi{Of">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="I}7Mk=%7]D!Yh5m~$-)f">
+            <mutation component_type="KodularBottomNavigation" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Bottom_Navigation1"></mutation>
+            <field name="COMPONENT_SELECTOR">Bottom_Navigation1</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="J#H0M2xJ$V]NmzxumR[I">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="d.!G~=I4}?1Eih#6z?y@" inline="false">
+                <mutation name="switchScreensCorrectWithValue">
+                  <arg name="openNewScreenName"></arg>
+                  <arg name="startValue"></arg>
+                </mutation>
+                <field name="PROCNAME">switchScreensCorrectWithValue</field>
+                <value name="ARG0">
+                  <block type="text" id="r{Z9Pn;F0:FL-M?;Nv$[">
+                    <field name="TEXT">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="math_number" id="cLhQNK0=wk$Onyqg!t=S">
+                    <field name="NUM">188</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="EhVfDII64UZUU{242P}-" disabled="true" x="-1530" y="-2290">
+    <mutation component_type="Label" is_generic="false" instance_name="Label188" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Label188</field>
+    <statement name="DO">
+      <block type="component_set_get" id="1z:DaD%N27X%-%6P0{fi">
+        <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HA_Puzzle"></mutation>
+        <field name="COMPONENT_SELECTOR">HA_Puzzle</field>
+        <field name="PROP">Visible</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="pVHpSgk}!h9]^e}XIz4Z">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="st@9*R-TeEAC~BBs3skT">
+            <mutation component_type="KodularBottomNavigation" set_or_get="set" property_name="Visible" is_generic="false" instance_name="Bottom_Navigation1"></mutation>
+            <field name="COMPONENT_SELECTOR">Bottom_Navigation1</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="tPjBsR]8{7xr2;w2vi@F">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="ge_be(-vPkAa7rHx@uqD" inline="false">
+                <mutation name="switchScreensCorrectWithValue">
+                  <arg name="openNewScreenName"></arg>
+                  <arg name="startValue"></arg>
+                </mutation>
+                <field name="PROCNAME">switchScreensCorrectWithValue</field>
+                <value name="ARG0">
+                  <block type="text" id="!4=n@l94AS=_Z]8T8iOO">
+                    <field name="TEXT">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="math_number" id="U(UBZK0%{.@FMKof5W+k">
+                    <field name="NUM">188</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="#~ik/q4Mt?)Z}TH=V3bp" x="-2250" y="-1670">
+    <mutation component_type="Form" is_generic="false" instance_name="Main_Screen" event_name="OtherScreenClosed"></mutation>
+    <field name="COMPONENT_SELECTOR">Main_Screen</field>
+    <statement name="DO">
+      <block type="controls_if" id="C0Gy(q)?jsQsa6|%x:qA">
+        <value name="IF0">
+          <block type="logic_compare" id="08|c+BTjz5ixRz(9`tbd">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="1KdF:nG;xg0vupZ#j6jH">
+                <mutation>
+                  <eventparam name="result"></eventparam>
+                </mutation>
+                <field name="VAR">result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="M~n+rqTSU)GBD5QwM.Q:">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="y$Bo7QEhTz#)(2upwGIG">
+            <value name="IF0">
+              <block type="logic_compare" id="ri,[#xNd,}.VzwXNotx3">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="QhXuX4*XfOA[;+4BAjge">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="0[roUSTeA$?j)Pd72lF2">
+                        <field name="TEXT">HAsolved188</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="Op[bK4lSp,7G]A66IZkk">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="N|V:2x*s%^|a2ZCX5@03">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="PkH)UnIpb+YJxw^%@x/h">
+                <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved188"></mutation>
+                <field name="COMPONENT_SELECTOR">HAsolved188</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="-rI!U5QDa2#a#9;g=I4S">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="/m3XLwJV{cpyBUMx5Srm">
+                <value name="IF0">
+                  <block type="logic_compare" id="le2hRy*A#KG_=c=AGN8!">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_method" id="Nd3Rlg:eoDffbA+DuHHM">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="pLRntGvE,Y+5JMBC^.u]">
+                            <field name="TEXT">HAsolved234</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="logic_boolean" id="TVxlvTzKVl|--n||RCBB">
+                            <field name="BOOL">FALSE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="logic_boolean" id="c.femXj@vYGcP_CK,`?x">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="`_w.}m+:(]L#Cz20VIEo">
+                    <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved234"></mutation>
+                    <field name="COMPONENT_SELECTOR">HAsolved234</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="2%haKlL;olGs+cv*^y:f">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="#6nleA-3~uV!df-1e:VY">
+                    <value name="IF0">
+                      <block type="logic_compare" id="H9jNAb5%nq/}{]5q/C[D">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="component_method" id="h*bY;5Dw,vNb*IN|5/Ve">
+                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="lzA3SG:%bc0uy$OH38~E">
+                                <field name="TEXT">HAsolved245</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="logic_boolean" id="KGc~QhfV`O}j9j#@f^V?">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_boolean" id="oYh_Nqp.pC;DS^`C/|b.">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="component_set_get" id="g#EkQMw1n.Klaq%T*)h{">
+                        <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved245"></mutation>
+                        <field name="COMPONENT_SELECTOR">HAsolved245</field>
+                        <field name="PROP">Visible</field>
+                        <value name="VALUE">
+                          <block type="logic_boolean" id="=+BMf/_j}A2P|x~jl{Ps">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="0:qAl,Ly41]A=ZweZVE%">
+                        <value name="IF0">
+                          <block type="logic_compare" id="]%*v8Ig9u({ykv+={a$=">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="component_method" id="C}KWr93=avFtp]VJ07/V">
+                                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="r9t,p*Sp0MUKZs*0tG;D">
+                                    <field name="TEXT">HAsolved280</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <block type="logic_boolean" id="~I6RN06creI4d`s1#kUj">
+                                    <field name="BOOL">FALSE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="logic_boolean" id="!@!XX-@i-S|2k;MUH{H]">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="component_set_get" id="8nE#rxw_IldHla%nydnJ">
+                            <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved280"></mutation>
+                            <field name="COMPONENT_SELECTOR">HAsolved280</field>
+                            <field name="PROP">Visible</field>
+                            <value name="VALUE">
+                              <block type="logic_boolean" id="X#el0+aXi($0GVHe?8Mx">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id=";;z1fQ%n-ZCyD(k}0yp?">
+                            <value name="IF0">
+                              <block type="logic_compare" id="7Y)^RbLT_0bNz8v3l:JK">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_method" id="pG*mmQSa~m6J8KtQ5I0Q">
+                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id="]Fa)TF9#^W[ZH$+DF2Nw">
+                                        <field name="TEXT">HAsolved328</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="logic_boolean" id="jVsyh-m+lmJHaoQMz4.}">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_boolean" id="zco=*N%?0SkdS|S(6Ty)">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_set_get" id="J4I!nHTwkS1+uJLXFy#1">
+                                <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved328"></mutation>
+                                <field name="COMPONENT_SELECTOR">HAsolved328</field>
+                                <field name="PROP">Visible</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="1,1wiy+.y4j*HOB,N#%a">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="]Xb_T2@uzGTQwt`@ldUE">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="UE+8YY`9a|]wPtE+%QY8">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="component_method" id="rWY7,vp[^|7Q)ioBz63n">
+                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                        <value name="ARG0">
+                                          <block type="text" id="5$(x}/W60jn71((isX1Q">
+                                            <field name="TEXT">HAsolved373</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="logic_boolean" id="E,L^8:BgO|cqf)`$BWn=">
+                                            <field name="BOOL">FALSE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_boolean" id="xWScjM?REiu3=cFgSDp,">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="component_set_get" id="6lqAG;ftlcU7D-Bx^BV@">
+                                    <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved373"></mutation>
+                                    <field name="COMPONENT_SELECTOR">HAsolved373</field>
+                                    <field name="PROP">Visible</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="u#.}}b;S-LP1hM*]HjzS">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="component_method" id="]zW{EC@dC93c}n-l)af-">
+                                    <mutation component_type="KodularBottomNavigation" method_name="SelectItem" is_generic="false" instance_name="Bottom_Navigation1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Bottom_Navigation1</field>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="-.pXqhRTGvoVvM:*#Gch">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_set_get" id="Y[%K/7yw$Es!ryIRT:pv">
+                                        <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VA_chessLessonBtns"></mutation>
+                                        <field name="COMPONENT_SELECTOR">VA_chessLessonBtns</field>
+                                        <field name="PROP">Visible</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id="v9L-nxgAu7/YATJtR|0-">
+                                            <field name="BOOL">FALSE</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_set_get" id="gJ}l0YW[|tFwTE]~`{mh">
+                                            <mutation component_type="VerticalScrollArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VA_chessPuzzleBtns"></mutation>
+                                            <field name="COMPONENT_SELECTOR">VA_chessPuzzleBtns</field>
+                                            <field name="PROP">Visible</field>
+                                            <value name="VALUE">
+                                              <block type="logic_boolean" id="?N*bH9{t;^JxW{_HYyuS">
+                                                <field name="BOOL">TRUE</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="component_method" id="BWt_iWtEO8Z%?=WQ9uJo">
+                                                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="OJc%:4u*9aYSmqkhdo|9" x="-2890" y="-1630">
+    <mutation component_type="KodularBottomNavigation" is_generic="false" instance_name="Bottom_Navigation1" event_name="ItemSelected"></mutation>
+    <field name="COMPONENT_SELECTOR">Bottom_Navigation1</field>
+    <statement name="DO">
+      <block type="controls_if" id="wDCPo)8$1qzJ(]5kG.jV">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="0]voxg;xy4t]WyiVqV}f">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="*t}FZujwlvix,5FGr%L6">
+                <mutation>
+                  <eventparam name="id"></eventparam>
+                </mutation>
+                <field name="VAR">id</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="ut/fVC`X85h!On6G)3d}">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="qDYhVU$/ns|YB%f[W7z,">
+            <mutation component_type="Form" set_or_get="set" property_name="Title" is_generic="false" instance_name="Main_Screen"></mutation>
+            <field name="COMPONENT_SELECTOR">Main_Screen</field>
+            <field name="PROP">Title</field>
+            <value name="VALUE">
+              <block type="text" id="^o,r|h|AXQjt1U.%x;B|">
+                <field name="TEXT">Chess Lesson</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="I;=:%8C_1hFfHg7pqI{G">
+                <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VA_chessLessonBtns"></mutation>
+                <field name="COMPONENT_SELECTOR">VA_chessLessonBtns</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="T9fAF~|lNm/9185VlkfY">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="n|]azqOe]67yPRT6@WB8">
+                    <mutation component_type="VerticalScrollArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VA_chessPuzzleBtns"></mutation>
+                    <field name="COMPONENT_SELECTOR">VA_chessPuzzleBtns</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id=";@TF/rj7S.3ENXc,W{/6">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="[[8%tYI-/aC5D;;hX?P2">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="ou=XcNthQgWz}422O1@l">
+                <mutation>
+                  <eventparam name="id"></eventparam>
+                </mutation>
+                <field name="VAR">id</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="yT_#ZB{HP7IrT=T2~XF{">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="component_set_get" id="dnH.V{BMB[dMaO=??Ge3">
+            <mutation component_type="Form" set_or_get="set" property_name="Title" is_generic="false" instance_name="Main_Screen"></mutation>
+            <field name="COMPONENT_SELECTOR">Main_Screen</field>
+            <field name="PROP">Title</field>
+            <value name="VALUE">
+              <block type="text" id="[k:Ry~bRZdp1kn6Lw:K1">
+                <field name="TEXT">Chess Puzzle</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="KosDkkppGT_{m/%3q0.h">
+                <mutation component_type="VerticalScrollArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VA_chessPuzzleBtns"></mutation>
+                <field name="COMPONENT_SELECTOR">VA_chessPuzzleBtns</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="`Z!N6rr]HFZ}.uTcTFH8">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="}-9#bvWTReQR3m?se_~@">
+                    <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VA_chessLessonBtns"></mutation>
+                    <field name="COMPONENT_SELECTOR">VA_chessLessonBtns</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="!MHdL@MqpXT,x(O9H/P/">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="So*yVvR|#K0kB:G,CQx=" x="-3610" y="-1590">
+    <mutation component_type="Form" is_generic="false" instance_name="Main_Screen" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Main_Screen</field>
+    <statement name="DO">
+      <block type="component_method" id="?iJIn,umf{?zqD}_},v_">
+        <mutation component_type="Notifier" method_name="ShowChooseDialog" is_generic="false" instance_name="Notifier2"></mutation>
+        <field name="COMPONENT_SELECTOR">Notifier2</field>
+        <value name="ARG0">
+          <block type="text" id="fl{s^6gmNX$~qB5;R3]?">
+            <field name="TEXT">Are you sure you want to exit?</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="WY)-}|Vu},Cgow+TWIG`">
+            <field name="TEXT">Exit Application</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id="a=B^uxg/]?=~$~-d#f#%">
+            <field name="TEXT">Yes</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="text" id="pG@`^]?[-%!4Azrf$_f!">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="logic_boolean" id="XkTNor(PIBz0nJ=,Ie2Q">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="GP$x2s-l/:MFo0O[HQJ!" x="-1510" y="-1590">
+    <mutation component_type="Form" is_generic="false" instance_name="Main_Screen" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Main_Screen</field>
+    <statement name="DO">
+      <block type="component_method" id="di5D}K0GQ27Ay)Cg/I~u">
+        <mutation component_type="MakeroidSideMenuLayout" method_name="AddItem" is_generic="false" instance_name="Side_Menu_Layout1"></mutation>
+        <field name="COMPONENT_SELECTOR">Side_Menu_Layout1</field>
+        <value name="ARG0">
+          <block type="text" id="|An_n#acbj5Cn688XUMI">
+            <field name="TEXT">Favorites</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="x:u%K]]5g(pZK;c3P~HB">
+            <field name="TEXT">blue-heart.png</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="vVPxmGL7{JU^}7A887Uk">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <value name="ARG3">
+          <block type="logic_boolean" id="b7-:SL?[?qSqv#Wlzn--">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+        <value name="ARG4">
+          <block type="math_number" id="7O_zg}!d}K#n;;-{2ax|">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="yw7IoC*JD:;Mi7S$s:JS">
+            <mutation component_type="MakeroidSideMenuLayout" method_name="AddItem" is_generic="false" instance_name="Side_Menu_Layout1"></mutation>
+            <field name="COMPONENT_SELECTOR">Side_Menu_Layout1</field>
+            <value name="ARG0">
+              <block type="text" id=";YnfdbYAoTt3?v,@.%}7">
+                <field name="TEXT">Acknowledgement</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="5[Gul-IR%eujr)6OJ}-r">
+                <field name="TEXT">blue-search.png</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="logic_boolean" id="Q=mjF~+8A!,@jPeL%9ow">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block type="logic_boolean" id="AmqsRR](hg5.A(+?XnR,">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <value name="ARG4">
+              <block type="math_number" id="c+v?cQq*Ea+$7{x[l=fV">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="o/)/J(r+p|Kxc8M@7eS.">
+                <mutation component_type="MakeroidSideMenuLayout" method_name="AddItem" is_generic="false" instance_name="Side_Menu_Layout1"></mutation>
+                <field name="COMPONENT_SELECTOR">Side_Menu_Layout1</field>
+                <value name="ARG0">
+                  <block type="text" id="a/.#D/;{S8:=HqALv(a6">
+                    <field name="TEXT">About us</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="?;}YCW*1IcTBq5aOpJg(">
+                    <field name="TEXT">blue-info2.png</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block type="logic_boolean" id="V#pT5|Li{;J3;-u7%zj4">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block type="logic_boolean" id="9l4a].`Ykq]n)J7|.VN?">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block type="math_number" id="43hq1HJ0Cs;!4)%hzG[r">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="7F,0VM.9lnzS]j^Uiu$0">
+                    <mutation component_type="KodularBottomNavigation" method_name="AddItem" is_generic="false" instance_name="Bottom_Navigation1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Bottom_Navigation1</field>
+                    <value name="ARG0">
+                      <block type="math_number" id=",ubA.p(v:$D=!6fLAOk^">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="fGd,T$BOl54%o[6fZjJ3">
+                        <field name="TEXT">CHESS LESSON</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block type="text" id="51%-t{GW~o0heSy(V_Ae">
+                        <field name="TEXT">book.png</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="3b?aKce9s0QmBM+(Q3X#">
+                        <mutation component_type="KodularBottomNavigation" method_name="AddItem" is_generic="false" instance_name="Bottom_Navigation1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Bottom_Navigation1</field>
+                        <value name="ARG0">
+                          <block type="math_number" id=".?QN-8I@:E2g[H/1s9.!">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="*5{Zn0D^)7uJ:E`IXIef">
+                            <field name="TEXT">CHESS PUZZLE</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block type="text" id="]h1Pz4M.d{}:L%GcLYS.">
+                            <field name="TEXT">puzzle.png</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="?;.mSkNGTMG_s|DYMGV4">
+                            <value name="IF0">
+                              <block type="logic_compare" id="t2/hz/M#P~;#m2heaiK_">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_method" id="C9d7:fB+bla:!!Dz~=m6">
+                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id="`2K:8Vf5s@zA~cPO8rtX">
+                                        <field name="TEXT">HAsolved188</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="logic_boolean" id="Uf=7cNt^2xfY``]*1F|E">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_boolean" id="V/(p#Gso4Vbpm+{,`p6[">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_set_get" id="_FY7m[-kb9YJ3L2ox^N5">
+                                <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved188"></mutation>
+                                <field name="COMPONENT_SELECTOR">HAsolved188</field>
+                                <field name="PROP">Visible</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="80}twD|?!SckljDawbg9">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="FPMFpw=)w:@e_zzo]CAX">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="Kp(_DWxN./~yK,zvfBqJ">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="component_method" id="kg8kz[Z0RC:v7OldLWl#">
+                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                        <value name="ARG0">
+                                          <block type="text" id="2dJ^4J8F9fK$]ml5E@_C">
+                                            <field name="TEXT">HAsolved234</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="logic_boolean" id="7(van@w;0!LmLf=pg6{!">
+                                            <field name="BOOL">FALSE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_boolean" id="!T:d#h#^FU.Y_mUKa4h7">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="component_set_get" id="TDr.^q2E,]n$r7tpIzdN">
+                                    <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved234"></mutation>
+                                    <field name="COMPONENT_SELECTOR">HAsolved234</field>
+                                    <field name="PROP">Visible</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="w[Or;n(_zN!3CC,c/+fE">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="controls_if" id="!-k)38MfKa(S-0~8Q_~h">
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="dm#H2ft!Gu|pj+kyr;`S">
+                                        <field name="OP">EQ</field>
+                                        <value name="A">
+                                          <block type="component_method" id="o:~E^1$D;6=z%ZxI!X!L">
+                                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                            <value name="ARG0">
+                                              <block type="text" id="#kg}64o-:su%Wamw!fp!">
+                                                <field name="TEXT">HAsolved245</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block type="logic_boolean" id="msUi^6ISVDKr;t`*~aKn">
+                                                <field name="BOOL">FALSE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="logic_boolean" id="a5z`tpSx-U{JY]0^d::~">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="component_set_get" id=";eyGp!;NgDA/mpSbI+,8">
+                                        <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved245"></mutation>
+                                        <field name="COMPONENT_SELECTOR">HAsolved245</field>
+                                        <field name="PROP">Visible</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id="e37MGZ,unOV,N(j/N8u?">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block type="controls_if" id="D;SX?e`62{@A2mVaL-eX">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="+uZm8,KKiv7N/?F[@g#T">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="component_method" id="=1NInI8YHV_XcaST(+[D">
+                                                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                                <value name="ARG0">
+                                                  <block type="text" id="b,7Gff48(%iCkw0O^yKS">
+                                                    <field name="TEXT">HAsolved280</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block type="logic_boolean" id="efAeVf//2gb4Gzvf1gW]">
+                                                    <field name="BOOL">FALSE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_boolean" id="!|2^/f%1cUhL??+Jq~)W">
+                                                <field name="BOOL">TRUE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block type="component_set_get" id="=YkYaxmEemx%(fJXFT}j">
+                                            <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved280"></mutation>
+                                            <field name="COMPONENT_SELECTOR">HAsolved280</field>
+                                            <field name="PROP">Visible</field>
+                                            <value name="VALUE">
+                                              <block type="logic_boolean" id="|VM?e`pcFf-j1XNF[#G_">
+                                                <field name="BOOL">TRUE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block type="controls_if" id="m4^U:avUTVQVYn6xTUtz">
+                                            <value name="IF0">
+                                              <block type="logic_compare" id="mQb598o,hx+V$(]*adP}">
+                                                <field name="OP">EQ</field>
+                                                <value name="A">
+                                                  <block type="component_method" id="l^3Jv86U-l.Mp.W_CY`M">
+                                                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                                    <value name="ARG0">
+                                                      <block type="text" id="Ve1SSX6C,^UsC?{*hyuN">
+                                                        <field name="TEXT">HAsolved328</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block type="logic_boolean" id="BAh.tF=uyq0^.jfehDkV">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="logic_boolean" id="Ub(ZAA!Bqa5-V*Y|`;Av">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="component_set_get" id="dUy$vW.O3k^ya*,2s(hv">
+                                                <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved328"></mutation>
+                                                <field name="COMPONENT_SELECTOR">HAsolved328</field>
+                                                <field name="PROP">Visible</field>
+                                                <value name="VALUE">
+                                                  <block type="logic_boolean" id="`2o@GIpjX[PhX[2(GVh,">
+                                                    <field name="BOOL">TRUE</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block type="controls_if" id="LN7J$wKJuJ,lcW%d!%XB">
+                                                <value name="IF0">
+                                                  <block type="logic_compare" id="x~$PnHVZr{=xy59~tLfj">
+                                                    <field name="OP">EQ</field>
+                                                    <value name="A">
+                                                      <block type="component_method" id="h;D[7(,?b~0@rb$$;ErD">
+                                                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                                                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                                                        <value name="ARG0">
+                                                          <block type="text" id="YLW49{W[Zc~S!cKwRKeH">
+                                                            <field name="TEXT">HAsolved373</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block type="logic_boolean" id="LIpXVWjjy%(E.]+ZfTLf">
+                                                            <field name="BOOL">FALSE</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="logic_boolean" id="Wqbo/Mwf]t-Rd-1l=/`+">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block type="component_set_get" id="L/~1~/uhdexq/X0/;TN#">
+                                                    <mutation component_type="HorizontalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="HAsolved373"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">HAsolved373</field>
+                                                    <field name="PROP">Visible</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="HWn`10Jr6*DH`^-ujq.3">
+                                                        <field name="BOOL">TRUE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="component_set_get" id="0MsYUBC?,w_|B1}sdb*v">
+                                                    <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VAaboutUs"></mutation>
+                                                    <field name="COMPONENT_SELECTOR">VAaboutUs</field>
+                                                    <field name="PROP">Visible</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="G/c5odky,5$bL/N/=xuO">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ZG^A7!04:xh[ZgD+A?Y`" x="-710" y="-1550">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View188" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View188</field>
+    <statement name="DO">
+      <block type="component_method" id="Jo_BjO^mB9G%[[.Z,e_I">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="aIz;.In3:=,5n9oYJH@i">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id=".:l!-]]84+ncf#UxQMH)">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="C+,=:1r^48HtD`*kr}oy">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="ja4NZk`Lc2P1R8e?dVf(">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="=}Ik?(sD[y[0qPfoCc1[">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id=";qm4Q^dyXxM@*$lK,`Ew">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="TFx@7DFrL$Nwn%b85/NT">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="$=^vOUi;a)/OJsu:9R[3">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="nKq#CZ7ao_5D;X[)0:e^">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="text" id="~c*[TgG^;~lcb{-W/4GI">
+                    <field name="TEXT">Preparing Chess Puzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="|lNJ]-pEXst0Bg8q[Whf">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="gNdQkFLkmH?(#_-X_sdZ">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="qYqCwS0Ru]Od[+{TG;*^">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="1Ov,WQgwc*7oEwKQw+qo">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="?)U_?7+,yvLHEB5FH9;P">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="U53JglRm%{T]v$C4]82=">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="^s9EN)B|ty+zyl,R/n_C">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreenWithStartValue" id=".Ir}DftF;b0MIH!CSIn/">
+                <value name="SCREENNAME">
+                  <block type="helpers_screen_names" id="4aPp[81wJ:6NwWZh23^J">
+                    <field name="SCREEN">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="STARTVALUE">
+                  <block type="math_number" id="tE!@aOUoj+)?Zf,[ngbx">
+                    <field name="NUM">188</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="hI41]gK`a!vCS%$BE|)." x="10" y="-1550">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="cardOpeningLines" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">cardOpeningLines</field>
+    <statement name="DO">
+      <block type="controls_if" id="/)-cyfZ;{CV/$%Hb!T6?">
+        <value name="IF0">
+          <block type="logic_boolean" id="8-;06ozIcwGF+j/8=|O9">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="fC[PUcGt}@1A)=das{,G">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="kUDC1BVN.LE/:m%s8KC.">
+                <field name="SCREEN">ScreenOpeningLines</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="jXDN7yH#_GSkiQ![?]+k"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="OQ%p7V}Hbp,?58WL$_uY" x="-3610" y="-1330">
+    <mutation component_type="Notifier" is_generic="false" instance_name="Notifier2" event_name="AfterChoosing"></mutation>
+    <field name="COMPONENT_SELECTOR">Notifier2</field>
+    <statement name="DO">
+      <block type="controls_if" id="~00y-J9|-i+Q35f+Yc)h">
+        <value name="IF0">
+          <block type="logic_compare" id="jSev.-.Gefy(rxd]APoI">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="L@5h~Pn}HDE5#S)%~+gk">
+                <mutation>
+                  <eventparam name="choice"></eventparam>
+                </mutation>
+                <field name="VAR">choice</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="l~gkF7RYI?_^7uJ]#rm3">
+                <field name="TEXT">Yes</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_closeScreen" id="^sN02vF#;r{S8HCSamiD"></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=";|t~Y{el%h)s1`+j|%a," x="10" y="-1390">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardOpening" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardOpening</field>
+    <statement name="DO">
+      <block type="controls_if" id="k!*a(cG/r{(lZ-q{$,ui">
+        <value name="IF0">
+          <block type="logic_boolean" id="kc+h(umWk2$;yMFp~#td">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="@|N*?{v.4XO|?o^XO-g_">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="OXms!%W:0AItCog}z/Yb">
+                <field name="SCREEN">ScreenOpening</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="k;V(tLlP`Z4Ape=G(Z7g"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="|htu$8MBt={p:N2Ma8~3" x="-2890" y="-1230">
+    <mutation component_type="MakeroidSideMenuLayout" is_generic="false" instance_name="Side_Menu_Layout1" event_name="OnMenuItemClick"></mutation>
+    <field name="COMPONENT_SELECTOR">Side_Menu_Layout1</field>
+    <statement name="DO">
+      <block type="controls_if" id="7GJi#8gozEy.e*C;j:Q8">
+        <mutation elseif="2"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="J|?JigRefHLuDj`F,P](">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="yM|@nAUxbt;ncuz4n6K;">
+                <mutation>
+                  <eventparam name="title"></eventparam>
+                </mutation>
+                <field name="VAR">title</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="[^HIOj_RFXB[s1ni`fy3">
+                <field name="TEXT">Favorites</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="06M(ub7@pBx[AhQW?#}n">
+            <value name="IF0">
+              <block type="logic_boolean" id="73P2u!^cyghTKl+Vr$|q">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_openAnotherScreen" id=";H/J.$JlhLLE`o2B8!jz">
+                <value name="SCREEN">
+                  <block type="helpers_screen_names" id="4#r^#_}+XLMDxzdy;N|s">
+                    <field name="SCREEN">Favorites</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_closeScreen" id="eKU]a2BaA7C!|4^9^e_@"></block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="OZWuE$TGNT#ohoEgeB80">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="B-=KM?GvPU%bqa?@%I?]">
+                <mutation>
+                  <eventparam name="title"></eventparam>
+                </mutation>
+                <field name="VAR">title</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="2c[O5kURR@NF:us`3uzr">
+                <field name="TEXT">About us</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="component_set_get" id="QYj02Sx@|5W8;*53f-3^">
+            <mutation component_type="VerticalArrangement" set_or_get="set" property_name="Visible" is_generic="false" instance_name="VAaboutUs"></mutation>
+            <field name="COMPONENT_SELECTOR">VAaboutUs</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_boolean" id="rJigAR`Eig(,;=,FPl(E">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="%M0^J?W7#6_q$?Us2`Eq">
+                <mutation component_type="Notifier" method_name="CreateCustomDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="component_component_block" id="gvi*8ilb4A;8;DT0J$:H">
+                    <mutation component_type="VerticalArrangement" instance_name="VAaboutUs"></mutation>
+                    <field name="COMPONENT_SELECTOR">VAaboutUs</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="FTo|lU*/|?Sdm(W%w;yo">
+                    <field name="TEXT">Capstone Researcher</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block type="text" id="RK?8^@XEbb}1tEGA%,95">
+                    <field name="TEXT"></field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block type="text" id=":L+D(|M}GxNtaHD.cSJq">
+                    <field name="TEXT">Close</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block type="logic_boolean" id="bb%428cY+sV5zg6F.]j3">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="y+X7e?.~t!)wM91dJ@d`">
+                    <mutation component_type="Notifier" method_name="ShowCustomDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                    <field name="COMPONENT_SELECTOR">Notifier2</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF2">
+          <block type="logic_compare" id="5CR~i-8^(DYc)wui%#)v">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="%}6)_f)l]z?.2IvMj%}E">
+                <mutation>
+                  <eventparam name="title"></eventparam>
+                </mutation>
+                <field name="VAR">title</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="{Ig9;AUCRQjhLk+UmO:Y">
+                <field name="TEXT">Acknowledgement</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO2">
+          <block type="controls_if" id="]LsKbvu`P]/VTAE%Q!px">
+            <value name="IF0">
+              <block type="logic_boolean" id="jhrD08J~N7?e(rqr4-J;">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_openAnotherScreen" id="de31!D`d*.^.R-sE43WB">
+                <value name="SCREEN">
+                  <block type="helpers_screen_names" id="rmzPl|9M6!ALVK8u[_|a">
+                    <field name="SCREEN">Acknowledgement</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_closeScreen" id="[~M#EI0]rd#`DF/Qyk0_"></block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="gsmf1/U5pIf4fH~iG7IX" x="10" y="-1230">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardMiddlegame" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardMiddlegame</field>
+    <statement name="DO">
+      <block type="controls_if" id="FpZNTv,Ojfm(w9MbWbcv">
+        <value name="IF0">
+          <block type="logic_boolean" id="BS}tubhmoSIE%/jAPK#.">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="*?@vgW3fXkCX|V}%3gpl">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="I7SNfl]1gB^-Ke?+i157">
+                <field name="SCREEN">ScreenMiddlegame</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="htylG2?BXjvgmmc9).hB"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="03A7fy!!#o+elR*:v7)l" x="-710" y="-1070">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View234" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View234</field>
+    <statement name="DO">
+      <block type="component_method" id="78@}$6s7hf`B,llHw%O%">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="L(#%Bl`fZaT_QV#E!xvB">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="bo{Zo.LM^H%I}ay|qrds">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id=":*aoj65(;.|{*KDG3ukd">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="a!aBCWGS^t#N*7QTebz=">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="ccOd1IY03;:KhJi@S5V2">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="H9)u`_qolw28OY:2oKN;">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="%E#|{qzVY)POaTg(MWX5">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="!s*5efixOzI*DhO[M,q=">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="=g:agL|S@Y}Tz6p9~_cZ">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="text" id="+B[OMo2+zN[/TyjG]/yb">
+                    <field name="TEXT">Preparing Chess Puzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="2{md|75)`cPdF_.^/G$T">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="J7EnAjtD7W8tUbqFbVl]">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="K`SS=oEC[Fi`u~d3c5Iy">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="@_~qZS#mkJG?c~?T$@`e">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="UyGIWr$e^{[LPpC:f_v}">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="VklpIa+[XmA;t94J66Y{">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="v8N;/;Miy:[_4,]%(h*Y">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreenWithStartValue" id="qbeZGH[^_9qF/)eucVZl">
+                <value name="SCREENNAME">
+                  <block type="helpers_screen_names" id="@9K9,Bw++.b4r8Z(JxnH">
+                    <field name="SCREEN">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="STARTVALUE">
+                  <block type="math_number" id="+uBEomv^}kR`V+7?X=Px">
+                    <field name="NUM">234</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="m~zMZ{E2dJk(wPFPp80o" x="10" y="-1070">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardEndgame" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardEndgame</field>
+    <statement name="DO">
+      <block type="controls_if" id="d0vw_6lbn_D#_[8q{yPV">
+        <value name="IF0">
+          <block type="logic_boolean" id="f=/z.#H=j)P?4]GDC2}J">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="^x~wqGtl~bx]tGYFW!#k">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="nQ%~zrbyW9wxZSo7$IIH">
+                <field name="SCREEN">ScreenEndgame</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="?BpCH38hsob/=pSCpyz`"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="T=?d0eGS/yQ1Ct=4PRS;" x="10" y="-910">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardTacticsAndCalculation" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardTacticsAndCalculation</field>
+    <statement name="DO">
+      <block type="controls_if" id=".olh8~,99..r-lxzfR/*">
+        <value name="IF0">
+          <block type="logic_boolean" id="iTin#)!c_MBDqAoX#7^b">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="lxLcRt#[0z,TNvs.FfkI">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="b0;zgD!R`B*Tpp|wl~lT">
+                <field name="SCREEN">ScreenTacsNCalcs</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="d|=S1.:nW20-EsFvGa,%"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="iwX`fw$.Y~S{uL!b1QW:" x="10" y="-750">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardConcepts" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardConcepts</field>
+    <statement name="DO">
+      <block type="controls_if" id="@`R?i-}{4|L1QO)/@aGt">
+        <value name="IF0">
+          <block type="logic_boolean" id="k[?F1QY^PgaX!/zpGy)3">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="X$%]J)Z2z`4qTvtYD1rc">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="t9stFmO6o%d:Se6$_hDR">
+                <field name="SCREEN">ScreenConcepts</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="^sR(.^IOXm#{/h`F;[NG"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="nH-`^Uwix-_3;Od1bOBA" x="-710" y="-570">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View245" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View245</field>
+    <statement name="DO">
+      <block type="component_method" id="CY1ZZRPb!tEs$4YglrkJ">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="f?@R%IYr-AK?t/w!{uj*">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="$GsWg:=HCoG6SV~u_^a1">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="WG)4,[v(cctaAhQi[,x]">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="v93kUi}+3ZPoXK#|$B;_">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="!MTmVBix[adFN`(z2YAt">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="d)gUVKT2:dmA7-m)k}PS">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="Ok%m-M|2w6UTDPG,?n~]">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="0#W_,TQ};7([x`S7`]SV">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id=";,|[_Anc[sC?)UR37/j3">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="text" id=":3$L2#l8rx+:.%0(~geo">
+                    <field name="TEXT">Preparing Chess Puzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="%54l2H_$|@oB*s%QXAt7">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="noL|V^RT_b_|@U%t3B!z">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="~D_hGQXX-xR[:n({S!mM">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="J8_4~D|-?U8+L!!Ad5a@">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="m,viuH}f[?DL(.Oc7aY8">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="+_qa:|BMs~VaH4JoJnd^">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="]=3F]0(]M,MNiF#;OMp3">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreenWithStartValue" id="B@[C`4-/9_^cQwK0ilHc">
+                <value name="SCREENNAME">
+                  <block type="helpers_screen_names" id="Vi[(LTt/RbDkqBo[L]QG">
+                    <field name="SCREEN">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="STARTVALUE">
+                  <block type="math_number" id="uA2K%8^@xE^MEHeq4MIO">
+                    <field name="NUM">245</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="eYpv/Y|e/W]Rp(OB$`vk" x="10" y="-570">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardCheckmatePatterns" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardCheckmatePatterns</field>
+    <statement name="DO">
+      <block type="controls_if" id="f1^gP%fPq=l%ybp1[pN~">
+        <value name="IF0">
+          <block type="logic_boolean" id="J+Iyqm9+O#]zuNrHWF|~">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="/.eN,5jp}bHHEVhZ4S+i">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="5(Yz/0h:^!L4y@Uh=M(_">
+                <field name="SCREEN">ScreenCheckmatePatterns</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="{gD0m0z(/0d]P0aPjW.w"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="[Rx74r9ke51-:YkqxoG0" x="-710" y="-70">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View280" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View280</field>
+    <statement name="DO">
+      <block type="component_method" id="R2qfTZ$o]TjtN[=#x1^#">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="w.1w-=-x)tE#C4xBDRWW">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="KTS7YGHI:#,?uP=DX~3K">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="~b0r;;lT14bTBW$XZHWt">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id=":Q!=5rgLH+etl[`hHk)q">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="uyoS(1LyV~f8[/|(UBSp">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="LGRM0,@{(xmT*/joNcNo">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="PTE.=lKn0/8-a%8J^+pn">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="U,],y#5|,Y00/GDzUm=|">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="1iUI_r~%a-tMX(Z}a-~{">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="text" id="@/dNH_^`6S0q$|Tk/i*7">
+                    <field name="TEXT">Preparing Chess Puzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="AEm[83i;}o,GG5rz15We">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="=MgE^sfP%Cqdzdo8:(cI">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="@17Hi9rzFz[Vwp2_wS/Q">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="qb3KOO,n{UL/==:tewUS">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="`n{F{^:-N9h6YcBbL3bM">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="03Hr[bIkm}Qcr[A-oT,[">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="a]SIF.rzgM?,-(cLR4L0">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreenWithStartValue" id="NjD,tUj2~0.Mdupz.H^j">
+                <value name="SCREENNAME">
+                  <block type="helpers_screen_names" id="L(M..W|312^3r^)YFOmR">
+                    <field name="SCREEN">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="STARTVALUE">
+                  <block type="math_number" id="K.-rG|:bfBvrj34vtKu:">
+                    <field name="NUM">280</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Jlo=yaz?3Xg~mx?il2GH" x="-710" y="430">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View328" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View328</field>
+    <statement name="DO">
+      <block type="component_method" id="m063c,o2sF2I_)31c4xt">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="pG9kP7wOm^LaL)m$CWw[">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="i,m(?`laSOqN}$wjco+Y">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="*ZO|Qc}`.v-DIbnZ-uQY">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="b+:B{N%}hgn41Roq/i%p">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="|AsU(}%K#Lx4Vo]hZ{4s">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="i]`(v:]:]ULw]A.GGnXo">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="gp+$jOE/|Kx)7YYDFvq/">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="eFH%+u;YT|;Xp=}z,(~c">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="/^b_gh+P*QN8|WB/oL{Z">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="text" id="pno.xk_(0{Ey1H}G;?DS">
+                    <field name="TEXT">Preparing Chess Puzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="ZQ,u;--k`LYxA5L-2eve">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="OgyLsNU|fOYYb*xBZ{c1">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="qp-{v5Vla*/BWjGUc/o_">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="KNZZ?w3_1rgNnLnK5-fJ">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id=":AU.@9K`,t2PzDn^?}Jb">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="7xHAY-5VXHC@[hNS{9W@">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="kC;bu|23S}fuT0-@+Oy=">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreenWithStartValue" id="FsfB/AUXiJj22c}V.`!u">
+                <value name="SCREENNAME">
+                  <block type="helpers_screen_names" id="wXyxJvx`c]cxh./CJPm%">
+                    <field name="SCREEN">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="STARTVALUE">
+                  <block type="math_number" id="1Y)CaTw_)a2;o5uo=-ik">
+                    <field name="NUM">328</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="SDbLQNS:(]|0G+%@WS~}" x="-690" y="930">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="Card_View373" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Card_View373</field>
+    <statement name="DO">
+      <block type="component_method" id="4.M#xu#ZGoSou9JSb`K1">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="}Qd~r.*@ny|%0.E^K(,,">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="o?53}.kp[2m@olLCvXjR">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="{d1@=DapOECIpjn.p:#e">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="C.3{^j/uVeKVX7PI1u=F">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="WW8Bevwl)35JCj_G}4Dx">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="s!77cqq:(3nSt9M$yZa;">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="`GM]B?EK|NP1hy@@^hMy">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="EVFZVM5QRfxsc_hty+)X">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id=".fOK${-~_.K~RV1P(o$H">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+                <value name="ARG0">
+                  <block type="text" id=";^x$~%gMj0]f#:2Rb[!P">
+                    <field name="TEXT">Preparing Chess Puzzle</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="*fIbuTp%F%[rA4!j1X#A">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="%66BXJR.(39O1U-f4S~J">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="{]r{SO!`hz8M6#0=)b(a">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="MItTMQO_;n0$Ad{ykFlf">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="GJa1o)x6AwIf,;iB(6/;">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="V|IZB)c$JO#B(rZ5w/+@">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id=",02k{kDC{!`@SIq*uFV}">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier2"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier2</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreenWithStartValue" id="8jBSzP,bJM,MFQCim!f}">
+                <value name="SCREENNAME">
+                  <block type="helpers_screen_names" id="3RA`3ug@4e8Qi`mH1S6P">
+                    <field name="SCREEN">ScreenPuzzle</field>
+                  </block>
+                </value>
+                <value name="STARTVALUE">
+                  <block type="math_number" id="IwgdNj)NO`y;1W2E3![f">
+                    <field name="NUM">373</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>

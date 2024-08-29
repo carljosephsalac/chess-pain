@@ -1,0 +1,796 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="-7D=K6lO(1x+@O,+duk]" x="-2690" y="-10">
+    <mutation component_type="Form" is_generic="false" instance_name="ScreenTacsNCalcs" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenTacsNCalcs</field>
+    <statement name="DO">
+      <block type="controls_if" id="xmfYS8uzq+Zzhjmssp:a">
+        <value name="IF0">
+          <block type="logic_boolean" id="z{krUT36=%PTmiA^~+]S">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="U73N#cpJn[ow;@#3[S{~">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="Fw=@-q7}.u]d9[g^ms@t">
+                <field name="SCREEN">Main_Screen</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="ZZ}=b%=Ej45Hx38_b#RW"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="global_declaration" id="*wqFqrqD5!gCd/s#q|]X" disabled="true" x="-1470" y="-50">
+    <field name="NAME">favorites</field>
+    <value name="VALUE">
+      <block type="logic_boolean" id="-xaU6(?xCBWIf#@[nyAb">
+        <field name="BOOL">FALSE</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="qaJpy2x+LQ40PuyNDCX|" x="-2130" y="-10">
+    <mutation component_type="Label" is_generic="false" instance_name="LabelFavorites" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+    <statement name="DO">
+      <block type="controls_if" id="O6WkI0pd}2Wo5jtf^`/P">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="]^`O`W`@Z)[sG:a*5_jo">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="+J5ShHNlZUiFI8*{.9-Y">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="LabelFavorites"></mutation>
+                <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="VwUl58dPQkc/iM?QLsC/">
+                <field name="TEXT">favorite_border</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="XF4mwbomOjcksJLn(N:Z">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="LabelFavorites"></mutation>
+            <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="?09IG:k;YG@ffCFu[HZ|">
+                <field name="TEXT">favorites</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="p~VdIFo^(oF]Pd,{Is-L">
+                <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="LabelFavorites"></mutation>
+                <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                <field name="PROP">TextColor</field>
+                <value name="VALUE">
+                  <block type="color_white" id="4GhHm+;8s$7Sv8P!el-b">
+                    <field name="COLOR">#ffffff</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="FKcs*,TYQK`@aY4s.Ks~">
+                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="r8K[hFWF+%lK9xaE-C67">
+                        <field name="TEXT">TacsNCalcFavorites</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id=":wE3T?$UUoAX6|jOXlza">
+                        <field name="TEXT">favorites</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="kkY=U3I|^93=6ru1k)4-">
+                        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="]@pxmE)iKAFD9ynjNz/a">
+                            <field name="TEXT">TacsNCalcWhite</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="color_white" id="pokkC4(Z%{UP=:GNfev$">
+                            <field name="COLOR">#ffffff</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="1sbr]y]AjHN5K9d[nbHn">
+                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="?vURw-t,S=[17hkUkN(O">
+                                <field name="TEXT">visibleTacsNCalc</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="logic_boolean" id="OLL@MTrKn;-=z4sN3bBj">
+                                <field name="BOOL">TRUE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="*A?G|R[7mw.,(8FI:(J;">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_set_get" id="?u(jdaNOnpONy-#3)jMa">
+                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="LabelFavorites"></mutation>
+                <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="vl7g5~fGVpP)C,H*:JFV">
+                <field name="TEXT">favorites</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="component_set_get" id="k;oRo4Kqp.bqbwXMzJ%q">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="LabelFavorites"></mutation>
+            <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="PP3]@MMgBOA1TEl+R^J;">
+                <field name="TEXT">favorite_border</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="KwLlLL2v!KG!Nak8GG2X">
+                <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="LabelFavorites"></mutation>
+                <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                <field name="PROP">TextColor</field>
+                <value name="VALUE">
+                  <block type="color_white" id="$`EQgWq54?,R,}%Ji0$`">
+                    <field name="COLOR">#cccccc</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_method" id="yKl,w#pcqpjjk{j6gx9E">
+                    <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="^v~Fpt~k=Jb}f=uZ!l%3">
+                        <field name="TEXT">TacsNCalcGray</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="color_white" id="~sq7}_STLh*/goeg1GHx">
+                        <field name="COLOR">#cccccc</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="vs$#Wl|;KA~Q?1~(WwKe">
+                        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="xGOc`zeP!trLj}]PkD4*">
+                            <field name="TEXT">TacsNCalcFavorites</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="a:C6Xa3^D#dBfA!_Mwg+">
+                            <field name="TEXT">favorite_border</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="component_method" id="8?%/ZvQ9r@)9/EdUfVHg">
+                            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="ko(c(B5h?]weg+VI@g^^">
+                                <field name="TEXT">visibleTacsNCalc</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="logic_boolean" id="%zW4gS~;]uV_(ESrHhid">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="4}KYb4V5M..3J|ZrZhj:" x="-1490" y="10">
+    <mutation component_type="Form" is_generic="false" instance_name="ScreenTacsNCalcs" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenTacsNCalcs</field>
+    <statement name="DO">
+      <block type="component_set_get" id="vmAjkh1VmO1.)g#YL}k~">
+        <mutation component_type="Form" set_or_get="set" property_name="ShowTitlebarBackButton" is_generic="false" instance_name="ScreenTacsNCalcs"></mutation>
+        <field name="COMPONENT_SELECTOR">ScreenTacsNCalcs</field>
+        <field name="PROP">ShowTitlebarBackButton</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="]~4#(Un6Yd0rm36LK5{;">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="y$Bo7QEhTz#)(2upwGIG">
+            <value name="IF0">
+              <block type="logic_compare" id="ri,[#xNd,}.VzwXNotx3">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="QhXuX4*XfOA[;+4BAjge">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="8j0mAo%wxSpcchc0Flvd">
+                        <field name="TEXT">TacsNCalcDone</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="Op[bK4lSp,7G]A66IZkk">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="N|V:2x*s%^|a2ZCX5@03">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="UN`p#F(y#bVcg,W!K5.h">
+                <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="LabelFavorites"></mutation>
+                <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="Je4KPnqO_+^D^|`pQ(U}">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="r$f,RzBic]}gmq7+X_T!">
+                    <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="LabelCheck"></mutation>
+                    <field name="COMPONENT_SELECTOR">LabelCheck</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="=+ae_=S~qUgBi%*Y-2i6">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="|JE_O;#RwlL)on]N6bhE">
+                        <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="LabelDone"></mutation>
+                        <field name="COMPONENT_SELECTOR">LabelDone</field>
+                        <field name="PROP">Visible</field>
+                        <value name="VALUE">
+                          <block type="logic_boolean" id="3;wpq(]oym#^q({FSxcF">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="[OL|*i+9q9t%*:ccTgY!">
+                <mutation elseif="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="jMVKH?s{WDqm6vctB`=[">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_method" id="S+MiYc|oD:KkjiU.Xf)}">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="bShpA0MtQM$Y{JOQG7ui">
+                            <field name="TEXT">TacsNCalcFavorites</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="Jjk=*@:.uOd)V]CRe!fY">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="RXN*+`x%LP2imII7iG`:">
+                        <field name="TEXT">favorites</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="component_set_get" id="-;]2CTa{OP7tx,tqu?br">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="LabelFavorites"></mutation>
+                    <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="component_method" id="B/uK|JVD(rmdQjQ!E=sT">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="E[-XI)oI`]VvUxsSFoUL">
+                            <field name="TEXT">TacsNCalcFavorites</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="cgx#0lz60JgCzM8$ITHr">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id=":FN%byBY)JXnA2G9n]m@">
+                        <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="LabelFavorites"></mutation>
+                        <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                        <field name="PROP">TextColor</field>
+                        <value name="VALUE">
+                          <block type="component_method" id="4w[,fi72#;(?$iVOR6MM">
+                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="shhk/c|n|j|ZG#?o`hcy">
+                                <field name="TEXT">TacsNCalcWhite</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="text" id="GcVu:o6sNGIR?s!qjho?">
+                                <field name="TEXT"></field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="XB6aXm`k$H`aFc4MBYh(">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="component_method" id="Rp%3xIaS4I6CkS-Aw2vs">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="WxsWY1YQMF=gIY;BS[cj">
+                            <field name="TEXT">TacsNCalcFavorites</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id=",rd`0r~[X!jaAwFr_D/k">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="2pLlOW81){ouu3V(Fvx7">
+                        <field name="TEXT">favorites_border</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="component_set_get" id="[:q?@bazE$F~A/NP`s8W">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="LabelFavorites"></mutation>
+                    <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="component_method" id="fv5wIfKUIZ=!yTtKjx!4">
+                        <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                        <value name="ARG0">
+                          <block type="text" id="cO!w5gQ7l$rU6f9F8st%">
+                            <field name="TEXT">TacsNCalcFavorites</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block type="text" id="c|OSJYuXj}Y#);{_pNR9">
+                            <field name="TEXT"></field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id=")KZs@3KT#0@gSs9Mci2Y">
+                        <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="LabelFavorites"></mutation>
+                        <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                        <field name="PROP">TextColor</field>
+                        <value name="VALUE">
+                          <block type="component_method" id="Ae0SjmW3u7]xoL3$d3j9">
+                            <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                            <value name="ARG0">
+                              <block type="text" id="3:uD+Nl={,S7zcQWK0wA">
+                                <field name="TEXT">TacsNCalcGray</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block type="text" id="Z6uY.IdMuqKqT?gB6kjI">
+                                <field name="TEXT"></field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="(U@ycY7#[?:50Z!Vz!]N" x="-670" y="50">
+    <mutation component_type="Form" is_generic="false" instance_name="ScreenTacsNCalcs" event_name="OtherScreenClosed"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenTacsNCalcs</field>
+    <statement name="DO">
+      <block type="controls_if" id="Z_4,V+}3|kC*RR`O4jH^">
+        <value name="IF0">
+          <block type="logic_compare" id="~SbL/(7-jl;3[D@e}M9F">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="#N)AAzdS^F?K?^X|ZJ)M">
+                <mutation>
+                  <eventparam name="result"></eventparam>
+                </mutation>
+                <field name="VAR">result</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text" id="l%#[_rlu21tqPU;@7Qc9">
+                <field name="TEXT">TacsNCalc</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_if" id="nQd24V84C?@vsdia(L5a">
+            <value name="IF0">
+              <block type="logic_compare" id="sVx73fsLWc.X([O-Nu(N">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="vh?_M2nP}q15[DU,0Vz_">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="@1fg_Q{)ak!M#BByj[=r">
+                        <field name="TEXT">TacsNCalcDone</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="O^Qq3lp@+2t~WjU(U9Sk">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="do#@9sb].u3,0N|IygUv">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="`}4;Fvy6l23PyD=CgAGN">
+                <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="LabelFavorites"></mutation>
+                <field name="COMPONENT_SELECTOR">LabelFavorites</field>
+                <field name="PROP">Visible</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="f=],6,sp|FC][GxPxE(9">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="^Y%#LkSEvNh63Ny2{W;#">
+                    <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="LabelDone"></mutation>
+                    <field name="COMPONENT_SELECTOR">LabelDone</field>
+                    <field name="PROP">Visible</field>
+                    <value name="VALUE">
+                      <block type="logic_boolean" id="D/M]at3.ofGzQ:[MIG26">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="MPti:z_R}atN0o5uJ?xq">
+                        <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="LabelCheck"></mutation>
+                        <field name="COMPONENT_SELECTOR">LabelCheck</field>
+                        <field name="PROP">Visible</field>
+                        <value name="VALUE">
+                          <block type="logic_boolean" id="_,`-jfpl.#qfxA?DUHXT">
+                            <field name="BOOL">TRUE</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="component_method" id="Ke(q]ai`*.3!c0J[#!Ic">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="`2Z3H0ejI=(DfO]nJ!T3" x="-2690" y="210">
+    <mutation component_type="Form" is_generic="false" instance_name="ScreenTacsNCalcs" event_name="TitlebarBackButtonClicked"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenTacsNCalcs</field>
+    <statement name="DO">
+      <block type="controls_if" id="#D,C7C5d:)VdrHHpVA]S">
+        <value name="IF0">
+          <block type="logic_boolean" id="*+z,s)0MIemBm_9^JCBb">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id="Q{]C=D`y/ZCXHmDniS1J">
+            <value name="SCREEN">
+              <block type="helpers_screen_names" id="W}9kcx1GH)5#]V;bUj*z">
+                <field name="SCREEN">Main_Screen</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_closeScreen" id="hgw:ErX)z6}HKQC1oXnX"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="WJ[:qgR.d]iC{Rb:D[]q" x="110" y="110">
+    <mutation component_type="Label" is_generic="false" instance_name="LabelSkewer" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">LabelSkewer</field>
+    <statement name="DO">
+      <block type="component_method" id="TTIM0=9Q}KG,06szPpmy">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="Emr..P}LhStfj-/g-fmN">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="rDtl)qAN)x4.*Lf#Q7Wu">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="XIQ[@lU4H{yxkEH-cZ]T">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id=".8nGB.mma?{_w{FbS93Q">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="W=J$Iw6ulQ~#ZOo1C1!9">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="!I30Ak/6qH{QpM3}.t0L">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="mSsQeveS/#]%NP}{qvEF">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="*WQTm!hwc=[*]nk)i,Z.">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="qY7Q0H4L4n3=QXbF,bS!">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="Y~~hrnWBGTH+ZT-Br#vW">
+                    <field name="TEXT">Preparing Chess Lesson</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="e7x2rE+epbMVzpxq[Nfy">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="U?OJkSFQc#ip^$+DNeD.">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="pF!Q_l)RL,e:PfU@}8)e">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="ncnkzX~Px-%qPdB)BP!=">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="5N/2~n03@HO:5jA%xIH-">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="rhApc2^vG+p:0CqxkOG3">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="49|~*?{;jaAZ3wUUQyKY">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreen" id="77V3Vuu)B3_%.jaN$iu0">
+                <value name="SCREEN">
+                  <block type="helpers_screen_names" id="UT`%)g]FzsBy`o+i3]J(">
+                    <field name="SCREEN">ImportFB74F9</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="k=q+/I/[mMw|1~W!D9cy" x="770" y="130">
+    <mutation component_type="MakeroidCardView" is_generic="false" instance_name="CardTacsNCalc" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">CardTacsNCalc</field>
+    <statement name="DO">
+      <block type="component_method" id="t?5jC3$QlnukLiXN1sdC">
+        <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+        <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+        <value name="ARG0">
+          <block type="text" id="r).DFIa01=QMN9mr@,Kc">
+            <field name="TEXT">Notifier</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="logic_boolean" id="2mo.$?1nAu3st7`NL/2K">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="controls_if" id="isK0:sDdgOBvTM6CKH.D">
+            <mutation elseif="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="i3}Zxz/40b;tVoRN7H_|">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="!~S]0mrDh({jwlkpr=hQ">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="H|4;BoYS$ZW4NQmt=OX!">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="386pzAajR7#3$fn2TcdP">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="c5{(1|~CBOUl3@PVjq~9">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_method" id="[Ps#{zs@W}UoL!g_7Prm">
+                <mutation component_type="Notifier" method_name="ShowProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="g{_Q-Ix`^Q*@c1|#uw*w">
+                    <field name="TEXT">Preparing Chess Lesson</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="WSg4O`+65`[jyDkh(~mI">
+                    <field name="TEXT">Please Wait</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block type="logic_compare" id="fec(ysJ@/#D_;Yg3B^7D">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="/1jK50L%_p.UnZA6HHN3">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="GD}TA)@UEx{K6a-,TbM=">
+                        <field name="TEXT">Notifier</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="Hb4/5M0n4J3Dqi|?B;~3">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="OGsntsLYr{@6l`)+H,F6">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="component_method" id="Jz^E+*d6g1~$[nt-LLDw">
+                <mutation component_type="Notifier" method_name="DismissProgressDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_openAnotherScreen" id="]5hK[G|eMFR5bOsOfAEn">
+                <value name="SCREEN">
+                  <block type="helpers_screen_names" id="G:V-Y69yQHs,c:C#*BaK">
+                    <field name="SCREEN">ImportFB74F9</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="text" id="$S=Q*kjNE98GmA@n:0f," x="-188" y="246">
+    <field name="TEXT">TacsNCalcDone</field>
+  </block>
+  <yacodeblocks ya-version="242" language-version="34"></yacodeblocks>
+</xml>
