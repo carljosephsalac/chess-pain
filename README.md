@@ -19,7 +19,7 @@ This project can help develop their skills, increase knowledge, and can be refre
 - **Chess Lesson**: Interactive and informative chess tutorial.
 - **Chess Puzzle**: Beginner friendly and challenging chess puzzles with different difficulty level.
   
-## Technologies Used
+## Technology Used
 
 - **Kodular**: A drag-and-drop platform for building Android applications.
 
